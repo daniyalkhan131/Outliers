@@ -56,3 +56,18 @@ as max point.
 4- winsurization
 
 
+Z score outlier detection-
+	col. should be nearly normal dist.
+	tranform all x by appling (x-mean)/std
+	then mean+-3std ke bahar walo ko trim or capping
+
+using IQR-
+	(IQR proximity rule)
+	when data is skewed
+		
+percentile method-
+	max value is 100percentile
+	min value is 0percentile
+	median is 50percentile
+	now we can define any percentile for lower and upper value and detect oultiers
+	capping in this method is called winsurization
